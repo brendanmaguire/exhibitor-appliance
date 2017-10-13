@@ -124,6 +124,9 @@ Resources:
         - InstancePort: 8181
           LoadBalancerPort: 8181
           Protocol: TCP
+        - InstancePort: 2181
+          LoadBalancerPort: 2181
+          Protocol: TCP
       LoadBalancerName: exhibitor-{{Arguments.version}}
       SecurityGroups:
         - Fn::GetAtt:
